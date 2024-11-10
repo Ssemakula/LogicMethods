@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace LogicMethods
 {
@@ -59,6 +60,11 @@ namespace LogicMethods
         }
 
         public static bool IsTrue(decimal a)
+        {
+            return a != 0;
+        }
+
+        public static bool IsTrue(BigInteger a)
         {
             return a != 0;
         }
